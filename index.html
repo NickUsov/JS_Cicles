@@ -120,18 +120,18 @@
         let left=0;
         let right=100;
         middle=50;
-        let contin=true;
+        let repeat=true;
         let msg;
         do{
             msg=prompt(`You number is >,< or = ${middle} ?`);
             switch(msg){
                 case '>':{left=middle;}break;
                 case '<':{right=middle;}break;
-                case '=':{contin=false;confirm('Congratulations!');}break;
+                case '=':{repeat=false;confirm('Congratulations!');}break;
                 default:{alert('Not correct enter!');}break;
             }
             middle=parseInt((right+left)/2);
-        }while (contin==true);
+        }while (repeat);
     </script>
 </body>
 </html>
