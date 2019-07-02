@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cikles</title>
+</head>
+<body>
+    <script>
+        /*let start=parseInt(prompt('Enter number one'));
+        let finish=parseInt(prompt('Enter second number'));
+        let res=0;
+        for(let i=start;i<finish+1;i++)
+        {
+            res+=(i+start);
+        }
+        alert(`Sum all numbers from ${start} to ${finish} equals ${res}`)
+        */
+        // 2.
+        /*let a=parseInt(prompt('Enter number one'));
+        let b=parseInt(prompt('Enter second number'));
+        while(a > 0 && b > 0)
+            if(a > b)
+                a %= b;
+            else
+                b %= a;
+        alert(`${a + b}`) ;
+        */
+        // 3.
+        /*let number=parseInt(prompt('Enter the number'));
+        for(let i=1;i<number+1;i++)
+            if(number%i==0)
+                document.write(`${i}\n`);
+        */
+        // 4.
+        /*let num=parseInt((prompt('Enter a number')));
+        let i=0;
+        while (num!=0)
+        {
+            num=parseInt(num/10);
+            i++;
+        }
+        alert(`Quantity digits is ${i}`);
+        */
+        //5.
+       /* let num=0;
+        let positive=0;
+        let negative=0;
+        let zero=0;
+        let even=0;
+        let odd=0;
+        for(let i=0;i<10;i++)
+        {
+            num=parseInt(prompt('Enter a number'));
+            if(num%2==0)
+                even++;
+            else
+                odd++;
+            if(num>0)
+                positive++;
+            else  if(num==0)
+                zero++;
+            else
+                negative++;
+        }
+        document.write(`There are ${positive} numbers is positive, ${negative} - negative, ${zero} - zero, ${odd} - odd, ${even} -= even`);*/
+       // 6.
+     /*   let flag='p';
+        do {
+            let a=parseInt(prompt('Enter first number'));
+            let b=parseInt(prompt('Enter second number'));
+            let func=prompt('Enter an operation');
+            switch (func){
+                case '+':{alert(`Result = ${a+b}`)}break;
+                case '-':{alert(`Result = ${a-b}`)}break;
+                case '*':{alert(`Result = ${a*b}`)}break;
+                case '/':{alert(`Result = ${a/b}`)}break;
+                default:{alert(`Not correct operation`)}break;
+            }
+            flag=prompt('Click p for continue');
+        }while (flag=='p');*/
+     // 7.
+        /*let num=parseInt(prompt('Enter a number'));
+        let count=0;
+        let buf=num;
+        while (buf!=0)
+        {
+            buf=parseInt(buf/10);
+            count++;
+        }
+        let shift=parseInt(prompt('Enter a shift'));
+        let mul=count-shift;
+        let x=Math.pow(10,mul);
+        let div=parseInt(num/x);
+        let y=Math.pow(10,shift);
+        let dev=parseInt((num%x));
+        dev*=y;
+        dev+=div;
+        alert(`Result is ${dev}`);*/
+        // 8.
+     /*   let flag=true;
+        let  count=1;
+        do{
+            switch (count){
+                case 1:{flag=confirm('Monday, continue?');count++}break;
+                case 2:{flag=confirm('Tuesday,continue?');count++}break;
+                case 3:{flag=confirm('Wednesday, continue?');count++}break;
+                case 4:{flag=confirm('Thursday, continue?');count++}break;
+                case 5:{flag=confirm('Friday, continue?');count++}break;
+                case 6:{flag=confirm('Saturday, continue?');count++}break;
+                case 7:{flag=confirm('Sunday, continue?');count=1}break;
+            }
+        }while (flag==true)*/
+        // 9.
+       /* for(let i=2;i<10;i++)
+        {
+            for (let  j=1;j<11;j++)
+                document.write(`${i} x ${j} = ${i*j}`+'<br>');
+        }*/
+        // 10.;
+        let left=0;
+        let right=100;
+        middle=50;
+        let contin=true;
+        let msg;
+        do{
+            msg=prompt(`You number is >,< or = ${middle} ?`);
+            switch(msg){
+                case '>':{left=middle;}break;
+                case '<':{right=middle;}break;
+                case '=':{contin=false;confirm('Congratulations!');}break;
+                default:{alert('Not correct enter!');}break;
+            }
+            middle=parseInt((right+left)/2);
+        }while (contin==true);
+    </script>
+</body>
+</html>
